@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: ManagerRoute.SPLASH_PAGE,
+      initialRoute: ManagerRoute.splashPage,
       onGenerateRoute: ManagerRoute.generateRoute,
       home: SplashPage(),
     );
