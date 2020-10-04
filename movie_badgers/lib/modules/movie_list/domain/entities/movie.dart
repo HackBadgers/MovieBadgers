@@ -3,7 +3,7 @@ import 'package:meta/meta.dart';
 
 class Movie extends Equatable {
 
-  final int id;
+  final String id;
   final String title;
 
   Movie({
