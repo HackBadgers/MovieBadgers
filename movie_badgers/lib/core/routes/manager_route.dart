@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:moviebadgers/modules/movie_list/view/page/movie_list_page.dart';
 import 'package:moviebadgers/modules/splash/view/page/splash_page.dart';
 
 class ManagerRoute {
 
   static const splashPage = '/';
+  static const movieListPage = '/movie-list';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
 
@@ -13,6 +15,11 @@ class ManagerRoute {
       case splashPage :
         return MaterialPageRoute(
             builder: (_) => SplashPage()
+        );
+
+      case movieListPage :
+        return MaterialPageRoute(
+            builder: (_) => MovieListPage()
         );
 
       default:
