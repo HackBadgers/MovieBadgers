@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:moviebadgers/core/routes/manager_route.dart';
 import 'package:moviebadgers/modules/splash/view/page/splash_page.dart';
+import 'package:moviebadgers/core/dependency_injection/injection_container.dart' as dependency_injection;
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dependency_injection.init();
   runApp(MyApp());
 }
 
