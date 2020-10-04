@@ -4,20 +4,20 @@ import 'package:moviebadgers/modules/splash/view/page/splash_page.dart';
 
 class ManagerRoute {
 
-  static const SPLASH_PAGE = '/';
-  static const MOVIE_LIST_PAGE = '/movie-list';
+  static const splashPage = '/';
+  static const movieListPage = '/movie-list';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
 
 
     switch( settings.name ) {
 
-      case SPLASH_PAGE :
+      case splashPage :
         return MaterialPageRoute(
             builder: (_) => SplashPage()
         );
 
-      case MOVIE_LIST_PAGE :
+      case movieListPage :
         return MaterialPageRoute(
             builder: (_) => MovieListPage()
         );
