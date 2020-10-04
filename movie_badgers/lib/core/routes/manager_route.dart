@@ -3,14 +3,14 @@ import 'package:moviebadgers/modules/splash/view/page/splash_page.dart';
 
 class ManagerRoute {
 
-  static const SPLASH_PAGE = '/';
+  static const splashPage = '/';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
 
 
     switch( settings.name ) {
 
-      case SPLASH_PAGE :
+      case splashPage :
         return MaterialPageRoute(
             builder: (_) => SplashPage()
         );
