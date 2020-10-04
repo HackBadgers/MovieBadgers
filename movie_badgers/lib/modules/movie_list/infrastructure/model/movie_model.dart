@@ -5,7 +5,7 @@ import 'package:moviebadgers/modules/movie_list/domain/entities/entities.dart';
 class MovieModel extends Movie {
 
   MovieModel({
-    @required int id,
+    @required String id,
     @required String title
   }) : super(id: id, title: title);
 
