@@ -1,0 +1,1 @@
+export 'movie_list_injector.dart';
